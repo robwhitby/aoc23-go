@@ -3,6 +3,7 @@ package aoc_test
 import (
 	"github.com/robwhitby/aocgo/aoc/day01"
 	"github.com/robwhitby/aocgo/aoc/day02"
+	"github.com/robwhitby/aocgo/aoc/day03"
 	"os"
 	"strings"
 	"testing"
@@ -35,4 +36,11 @@ func Test_Day02(t *testing.T) {
 	println(day02.Part1(input("day02")))
 	assert(t, day02.Part2(input("day02ex")), 2286)
 	println(day02.Part2(input("day02")))
+}
+
+func Test_Day03(t *testing.T) {
+	assert(t, day03.Part1(input("day03ex")), 4361)
+	println(day03.Part1(input("day03")))
+	assert(t, day03.Part2(input("day03ex")), 467835)
+	println(day03.Part2(input("day03")))
 }
