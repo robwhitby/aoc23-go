@@ -49,6 +49,6 @@ func Test_Day03(t *testing.T) {
 func Test_Day04(t *testing.T) {
 	assert(t, day04.Part1(input("day04ex")), 13)
 	println(day04.Part1(input("day04")))
-	//assert(t, day04.Part2(input("day03ex")), 467835)
-	//println(day04.Part2(input("day03")))
+	assert(t, day04.Part2(input("day04ex")), 30)
+	println(day04.Part2(input("day04")))
 }
