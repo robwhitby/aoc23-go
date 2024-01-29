@@ -4,6 +4,7 @@ import (
 	"github.com/robwhitby/aocgo/aoc/day01"
 	"github.com/robwhitby/aocgo/aoc/day02"
 	"github.com/robwhitby/aocgo/aoc/day03"
+	"github.com/robwhitby/aocgo/aoc/day04"
 	"os"
 	"strings"
 	"testing"
@@ -43,4 +44,11 @@ func Test_Day03(t *testing.T) {
 	println(day03.Part1(input("day03")))
 	assert(t, day03.Part2(input("day03ex")), 467835)
 	println(day03.Part2(input("day03")))
+}
+
+func Test_Day04(t *testing.T) {
+	assert(t, day04.Part1(input("day04ex")), 13)
+	println(day04.Part1(input("day04")))
+	//assert(t, day04.Part2(input("day03ex")), 467835)
+	//println(day04.Part2(input("day03")))
 }
