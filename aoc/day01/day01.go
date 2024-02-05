@@ -19,22 +19,11 @@ func Part1(input []string) int {
 }
 
 func Part2(input []string) int {
-	replacements := map[string]string{
-		"one":   "1",
-		"two":   "2",
-		"three": "3",
-		"four":  "4",
-		"five":  "5",
-		"six":   "6",
-		"seven": "7",
-		"eight": "8",
-		"nine":  "9",
-	}
-
+	nums := []string{"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"}
 	lines := []string{}
 	for _, line := range input {
-		for k, v := range replacements {
-			line = strings.ReplaceAll(line, k, k+v+k)
+		for i, n := range nums {
+			line = strings.ReplaceAll(line, n, n+strconv.Itoa(i+1)+n)
 		}
 		lines = append(lines, line)
 	}
